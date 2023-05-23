@@ -21,7 +21,6 @@ function LandingPage() {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
