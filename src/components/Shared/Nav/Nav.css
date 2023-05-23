@@ -1,17 +1,22 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  margin-inline: auto;
   padding: 1rem;
+  width: 80%;
 }
 
 .nav-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
-.nav-right {
+.nav-middle {
   display: flex;
   align-items: center;
-  padding-inline: 1rem;
+  justify-content: center;
+  width: 33%;
 }
 
 .nav-links {
@@ -22,9 +27,28 @@
 .nav-links > li {
   padding-inline: 1rem;
   list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .nav-cart-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-logo,
+.nav-cart {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+
+.nav-cart {
+  justify-content: right;
+}
+
+.logo {
+  width: 6rem;
+  padding: 0;
+  margin: 0;
 }
