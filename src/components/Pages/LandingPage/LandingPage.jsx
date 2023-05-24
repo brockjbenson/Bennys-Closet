@@ -17,11 +17,8 @@ function LandingPage() {
             Find secondhand clothing to complete your new look, at an affordable
             price. Start shopping now
           </p>
-          <div className="welcome-message-btns">
-            <button className="welcome-message-btn-1">
-              SHOP NOW <BsArrowUpRight className="btn-arrow" />
-            </button>
-          </div>
+
+          <button className="welcome-message-btn-1">SHOP NOW</button>
         </div>
         <div className="landing-images">
           <img

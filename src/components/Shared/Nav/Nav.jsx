@@ -4,8 +4,26 @@ import { BsBag } from "react-icons/bs";
 
 import "./Nav.css";
 import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function Nav() {
+  const history = useHistory();
+
+  function sendToAbout() {
+    history.push("/about");
+  }
+
+  function sendToHome() {
+    history.push("/home");
+  }
+
+  function sendToCloset() {
+    history.push("/closet");
+  }
+
+  function sendToContact() {
+    history.push("/contact");
+  }
   return (
     <div className="nav">
       <div className="nav-logo">
@@ -17,10 +35,10 @@ function Nav() {
       </div>
       <div className="nav-middle">
         <ul className="nav-links">
-          <li>HOME</li>
-          <li>CLOSET</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li onClick={sendToHome}>HOME</li>
+          <li onClick={sendToCloset}>CLOSET</li>
+          <li onClick={sendToAbout}>ABOUT</li>
+          <li onClick={sendToContact}>CONTACT</li>
         </ul>
       </div>
       <div className="nav-cart">

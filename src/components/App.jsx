@@ -13,10 +13,13 @@ import Footer from "./Shared/Footer/Footer";
 
 import AboutPage from "./Pages/AboutPage/AboutPage";
 
-import InfoPage from "./Pages/InfoPage/InfoPage";
+import InfoPage from "./Pages/InfoPage/ContactPage";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
 import "./App.css";
+import ClothingPage from "./Pages/ClothingPage/ClosetPage";
+import ClosetPage from "./Pages/ClothingPage/ClosetPage";
+import ContactPage from "./Pages/InfoPage/ContactPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -45,6 +48,14 @@ function App() {
 
           <Route exact path="/home">
             <LandingPage />
+          </Route>
+
+          <Route exact path="/closet">
+            <ClosetPage />
+          </Route>
+
+          <Route exact path="/contact">
+            <ContactPage />
           </Route>
 
           <Route>
